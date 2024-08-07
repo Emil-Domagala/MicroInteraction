@@ -21,7 +21,6 @@ const Hero =()=>{
               common project interactions &amp;{' '}
               <span className="yellow">saving you time.</span>
             </div>
-            
           </div>
         </div>
       </header>
