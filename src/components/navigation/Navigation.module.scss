@@ -1,0 +1,59 @@
+@use '../../__colors.css';
+
+.bgc-img {
+  position: absolute;
+  background-position: 100% 0;
+  background-size: auto;
+  background-repeat: no-repeat;
+  overflow-x: clip;
+  z-index: -1;
+  .bgc-img__yellow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    box-shadow: 25px 28px 100px 50px var(--yellow-brand);
+    opacity: 0.1;
+  }
+}
+nav {
+  padding: 1rem;
+  z-index: 2;
+  .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+    color: var(--white);
+  }
+  .nav-logo {
+    width: 10rem;
+  }
+  .nav-menu__all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:1rem;
+    border-radius: 100px;
+    .signin {
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--slate-grey);
+      background-color: rgba(41, 42, 43, 0);
+      font-family: Instrumentsans Medium, sans-serif;
+      font-weight: 400;
+      transition: all 0.4s;
+    }
+    .signup {
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--dark-blue);
+      background-color: var(--yellow-brand);
+      color: #000;
+      font-weight: 500;
+      font-family: Instrumentsans Medium, sans-serif;
+      transition: all 0.4s;
+    }
+  }
+}

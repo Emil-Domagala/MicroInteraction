@@ -1,0 +1,86 @@
+@use './__colors.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding: 8em;
+}
+
+body {
+  background-color: var(--black-brand);
+  color: var(--white-brand);
+font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+}
+
+article {
+  flex: 1;
+}
+
+.yellow{
+  color: var(--yellow-brand);
+}
+
+.container {
+  width: 100%;
+}
+
+.wrapper {
+  margin: 0 1rem 0 1rem;
+}
+
+.button {
+  color: var(--white);
+  text-align: center;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.rounded {
+  border-radius: 100px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
