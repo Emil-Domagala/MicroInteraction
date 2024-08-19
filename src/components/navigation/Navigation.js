@@ -1,12 +1,12 @@
 import MicroInteractionsLogoSVG from '../../assets/MicroInteractionsLogoSVG';
-import MicroInteractionsHeaderSVG from '../../assets/MicroInteractionsHeaderSVG';
+// import MicroInteractionsHeaderSVG from '../../assets/MicroInteractionsHeaderSVG';
 import classes from './Navigation.module.scss';
 const Navigation = () => {
   return (
     <>
       <div className={classes['bgc-img']}>
         <div className={classes['bgc-img__yellow']}></div>
-        <MicroInteractionsHeaderSVG />
+        {/* <MicroInteractionsHeaderSVG /> */}
       </div>
       <nav>
         <div className={classes['nav-wrapper']}>

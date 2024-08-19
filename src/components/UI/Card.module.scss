@@ -1,0 +1,51 @@
+@use '../../__colors.css';
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 32rem;
+  padding: 3rem;
+  border-radius: 2rem;
+overflow: visible;
+gap: 2rem;
+}
+
+.colection {
+  position: absolute;
+  top: calc(-1px - 0.8rem );
+  right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem 1rem;
+  background-color: var(--black-brand);
+  border: 1px solid var(--slate-grey);
+  border-radius: 10rem;
+  p {
+    font-size: 1rem;
+    line-height: 1rem;
+    color: var(--slate-grey);
+  }
+}
+
+.border-grey {
+  border: 1px solid rgba(109, 112, 130, 0.21);
+}
+
+.border-white {
+  border: 1px solid rgba(236, 236, 236, 0.08);
+}
+
+.bgc-white {
+  background-color: var(--white);
+}
+
+.bgc-black-2 {
+  background-color: var(--black-2);
+}
+.bgc-black-brand {
+  background-color: var(--black-brand);
+}

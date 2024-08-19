@@ -1,0 +1,122 @@
+@use '../../../__colors.css';
+
+.first,
+.second,
+.third {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  gap: 4px;
+  .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 3.8rem;
+    height: 3.8rem;
+    background-color: var(--yellow-brand);
+    border-radius: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: var(--black-brand);
+    overflow: hidden;
+    .arrow-wrapper {
+      position: absolute;
+      width: 18px;
+      line-height: 0rem;
+      transition: transform 0.4s;
+    }
+    .left {
+      transform: translateX(-200%);
+    }
+  }
+  .main-button {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem 3.25rem;
+    border: 1px solid var(--white-brand);
+    overflow: hidden;
+    &--inside {
+      display: flex;
+      white-space: nowrap;
+      transition: transform 0.4s;
+    }
+    .top {
+      position: relative;
+    }
+    .bottom {
+      position: absolute;
+      transform: translateY(120%);
+      padding: 1.25rem 3.25rem;
+      z-index: 3;
+    }
+    .main-button--bgc {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--white-brand);
+      transform: translateY(200%);
+      transition: transform 0.5s;
+      z-index: 1;
+    }
+  }
+}
+
+.first {
+  .main-button {
+    .bottom {
+      color: var(--black-brand);
+    }
+  }
+}
+.second,
+.third {
+  .main-button {
+    .bottom {
+      color: var(--white-brand);
+    }
+    .main-button--bgc {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+.third {
+  .main-button {
+    border: none;
+  }
+}
+
+.first:hover,
+.second:hover,
+.third:hover {
+  .circle {
+    .left {
+      transform: translateX(0%);
+    }
+    .right {
+      transform: translateX(200%);
+    }
+  }
+  .main-button {
+    .top {
+      transform: translateY(-210%);
+    }
+    .bottom {
+      transform: translateY(0%);
+    }
+    .main-button--bgc {
+      transform: translateY(0%);
+    }
+  }
+}

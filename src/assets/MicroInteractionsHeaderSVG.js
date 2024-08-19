@@ -1,13 +1,13 @@
 const MicroInteractionsHeaderSVG = () => {
   return (
     <svg
-      width="2257"
+      // width="2257"
       height="670"
       viewBox="0 0 2257 670"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_4123_1329)">
+      <g clipPath="url(#clip0_4123_1329)">
         <line
           x1="2257"
           y1="663.128"
@@ -367,7 +367,7 @@ const MicroInteractionsHeaderSVG = () => {
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -388,7 +388,7 @@ const MicroInteractionsHeaderSVG = () => {
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -409,7 +409,7 @@ const MicroInteractionsHeaderSVG = () => {
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -430,7 +430,7 @@ const MicroInteractionsHeaderSVG = () => {
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -450,8 +450,8 @@ const MicroInteractionsHeaderSVG = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(264.517 114.456) rotate(90) scale(142.59 34899.5)"
         >
-          <stop stop-color="#FFF250" />
-          <stop offset="1" stop-color="#FFF250" stop-opacity="0" />
+          <stop stopColor="#FFF250" />
+          <stop offset="1" stopColor="#FFF250" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint1_radial_4123_1329"
@@ -461,8 +461,8 @@ const MicroInteractionsHeaderSVG = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(532.103 550.545) rotate(-90) scale(142.59 34899.5)"
         >
-          <stop stop-color="#FFF250" />
-          <stop offset="1" stop-color="#FFF250" stop-opacity="0" />
+          <stop stopColor="#FFF250" />
+          <stop offset="1" stopColor="#FFF250" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint2_radial_4123_1329"
@@ -472,8 +472,8 @@ const MicroInteractionsHeaderSVG = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(285.818 -0.36817) rotate(-180) scale(142.59 34899.5)"
         >
-          <stop stop-color="#FFF250" />
-          <stop offset="1" stop-color="#FFF250" stop-opacity="0" />
+          <stop stopColor="#FFF250" />
+          <stop offset="1" stopColor="#FFF250" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint3_radial_4123_1329"
@@ -483,8 +483,8 @@ const MicroInteractionsHeaderSVG = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(1327.68 398.234) rotate(90) scale(132.027 34899.5)"
         >
-          <stop stop-color="#FFF250" />
-          <stop offset="1" stop-color="#FFF250" stop-opacity="0" />
+          <stop stopColor="#FFF250" />
+          <stop offset="1" stopColor="#FFF250" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint4_radial_4123_1329"
@@ -494,8 +494,8 @@ const MicroInteractionsHeaderSVG = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(1725.83 307.167) rotate(90) scale(132.027 34899.5)"
         >
-          <stop stop-color="#FFF250" />
-          <stop offset="1" stop-color="#FFF250" stop-opacity="0" />
+          <stop stopColor="#FFF250" />
+          <stop offset="1" stopColor="#FFF250" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint5_radial_4123_1329"
@@ -505,8 +505,8 @@ const MicroInteractionsHeaderSVG = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(2123.98 118.678) rotate(90) scale(132.027 34899.5)"
         >
-          <stop stop-color="#FFF250" />
-          <stop offset="1" stop-color="#FFF250" stop-opacity="0" />
+          <stop stopColor="#FFF250" />
+          <stop offset="1" stopColor="#FFF250" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint6_linear_4123_1329"
@@ -516,8 +516,8 @@ const MicroInteractionsHeaderSVG = () => {
           y2="138.833"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0001" stop-color="#FFFD63" />
-          <stop offset="1" stop-color="#FFFBF9" />
+          <stop offset="0.0001" stopColor="#FFFD63" />
+          <stop offset="1" stopColor="#FFFBF9" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_4123_1329"
@@ -527,8 +527,8 @@ const MicroInteractionsHeaderSVG = () => {
           y2="-1.52281"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0001" stop-color="white" />
-          <stop offset="1" stop-color="#FFFD63" />
+          <stop offset="0.0001" stopColor="white" />
+          <stop offset="1" stopColor="#FFFD63" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_4123_1329"
@@ -538,10 +538,10 @@ const MicroInteractionsHeaderSVG = () => {
           y2="-38.7004"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFFD63" />
-          <stop offset="0.0001" stop-color="#FFFD63" />
-          <stop offset="0.461458" stop-color="#FAF9B3" />
-          <stop offset="1" stop-color="#FFFD63" />
+          <stop stopColor="#FFFD63" />
+          <stop offset="0.0001" stopColor="#FFFD63" />
+          <stop offset="0.461458" stopColor="#FAF9B3" />
+          <stop offset="1" stopColor="#FFFD63" />
         </linearGradient>
         <linearGradient
           id="paint9_linear_4123_1329"
@@ -551,10 +551,10 @@ const MicroInteractionsHeaderSVG = () => {
           y2="-92.1463"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFFD63" />
-          <stop offset="0.0001" stop-color="#FFFD63" />
-          <stop offset="0.461458" stop-color="#FAF9B3" />
-          <stop offset="1" stop-color="#FFFD63" />
+          <stop stopColor="#FFFD63" />
+          <stop offset="0.0001" stopColor="#FFFD63" />
+          <stop offset="0.461458" stopColor="#FAF9B3" />
+          <stop offset="1" stopColor="#FFFD63" />
         </linearGradient>
         <clipPath id="clip0_4123_1329">
           <rect width="2257" height="670" fill="white" />

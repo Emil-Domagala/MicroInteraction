@@ -1,0 +1,17 @@
+@use '../../../__colors.css';
+
+.animations-wrapper {
+  width: 100vw;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 15%,
+    #000 85%,
+    transparent 100%
+  );
+  padding: 4rem 0;
+}

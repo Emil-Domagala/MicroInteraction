@@ -1,0 +1,87 @@
+@use '../../../__colors.css';
+
+.first,
+.second,
+.third {
+  p {
+    transition: opacity 0.4s;
+  }
+
+  .animation-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    margin-left: 1.5rem;
+    overflow: hidden;
+  }
+
+  .arrow {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 1rem;
+    min-height: 1rem;
+    max-width: 1rem;
+    max-height: 1rem;
+    transition: transform 0.4s;
+    transform: translateX(-150%);
+  }
+
+  .dot {
+    position: absolute;
+    border-radius: 50%;
+    min-width: 1.6rem;
+    min-height: 1.6rem;
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+    transition: transform 0.4s;
+    transform: translateX(0%);
+  }
+}
+
+.first,
+.second {
+  padding: 1.5rem 1.5rem 1.5rem 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.first,
+.third {
+  .dot {
+    background-color: var(--yellow-brand);
+  }
+}
+
+.second {
+  background-color: var(--white);
+  p {
+    color: var(--black-brand);
+  }
+  .arrow {
+    color: var(--black-brand);
+  }
+  .dot {
+    background-color: var(--black-brand);
+  }
+}
+
+.first:hover,
+.second:hover,
+.third:hover {
+  p {
+    opacity: 0.5;
+  }
+  .arrow {
+    transform: translateX(0%);
+  }
+  .dot {
+    transform: translateX(110%);
+  }
+}

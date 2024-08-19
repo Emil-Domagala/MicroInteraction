@@ -1,0 +1,62 @@
+@use '../../__colors.css';
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--yellow-brand);
+  color: #000;
+  border-radius: 100vw;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1.4rem 1.4rem 1.4rem 3rem;
+  text-decoration: none;
+
+  overflow: hidden;
+  font-size: 1.6rem;
+}
+
+.arrow-circle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 0.6rem;
+  width: 1.4rem;
+  color: var(--black);
+  z-index: 2;
+  transition: transform 0.4s;
+  svg {
+    z-index: 3;
+  }
+}
+
+.arrow-cricle-inner {
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: var(--black-brand);
+  z-index: 1;
+  border-radius: 100%;
+  transition: width 0.4s, height 0.4s;
+}
+
+.button:hover {
+  .arrow-circle {
+    transform: rotate(-45deg);
+    color: var(--white);
+  }
+  .arrow-cricle-inner {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+}
+
+.button.shadow {
+  transition: box-shadow 0.4s;
+  &:hover {
+    box-shadow: 0px 20px 50px 0px var(--yellow-brand-opacity);
+  }
+}
