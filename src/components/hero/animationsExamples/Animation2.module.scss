@@ -3,9 +3,6 @@
 .first,
 .second,
 .third {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
   flex-grow: 0;
   flex-shrink: 0;
   flex-wrap: nowrap;

@@ -1,0 +1,30 @@
+@use '../../../../__colors.css';
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  //   align-items: center;
+  .link,
+  .button {
+      display: block;
+    border: 1px solid #7e7e974d;
+    border-radius: 6px;
+    padding: 8px 12px 8px 8px;
+    background-color: #191a1d00;
+    color: #8c8c8cd3;
+    font-weight: 400;
+    font-size: 1.2rem;
+    transition: background-color 0.4s;
+    cursor: pointer;
+  }
+
+  .black {
+    &:hover {
+      background-color: #ffffff14;
+      border-color: #7e7e9733;
+    }
+  }
+
+}

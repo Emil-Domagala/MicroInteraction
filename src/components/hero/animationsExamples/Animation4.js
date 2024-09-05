@@ -4,7 +4,12 @@ import ArrowSVG from '../../../assets/ArrowSVG';
 
 const Animation4 = () => {
   return (
-    <Card bgc="bgc-black-brand" border="border-grey" colection>
+    <Card
+      bgc="bgc-black-brand"
+      border="border-grey"
+      colection
+      margin="0px 1rem 0px 1rem"
+    >
       <a href="/" className={`rounded uppercase link-button ${classes.first}`}>
         <p>Get started</p>
         <div className={classes['animation-wrapper']}>

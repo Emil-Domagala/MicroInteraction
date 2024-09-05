@@ -6,7 +6,7 @@ import ChevronSVG from '../../../assets/ChevronSVG';
 
 const Animation5 = () => {
   return (
-    <Card bgc="bgc-black-brand" border="border-grey">
+    <Card bgc="bgc-black-brand" border="border-grey" margin="0px 1rem 0px 1rem">
       <a href="/" className={`link-button ${classes.first}`}>
         <div className={classes['apple-logo']}>
           <AppleLogoSVG />
@@ -26,13 +26,10 @@ const Animation5 = () => {
       </a>
       <a href="/" className={`link-button rounded ${classes.third}`}>
         Subscribe
-        <div className={classes['arrows-wrapper']}>
-          <div className={classes['top']}>
-            <ArrowSVG />
-          </div>
-          <div className={classes['bottom']}>
-            <ArrowSVG />
-          </div>
+        <div className={classes['arrow-circle']}>
+          {/* <div className={classes['arrow-cricle-inner']} /> */}
+          <ArrowSVG className={classes['arrow-first']} />
+          <ArrowSVG className={classes['arrow-second']} />
         </div>
       </a>
     </Card>

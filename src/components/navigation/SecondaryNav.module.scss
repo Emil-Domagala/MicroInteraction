@@ -3,11 +3,45 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  .secondary-nav--item {
+  .nav--item {
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
-    color: var(--white);
+    color: var(--white-brand);
     text-decoration: none;
     cursor: pointer;
+  }
+  .normal {
+    transition: color 0.4s;
+    &:hover {
+      color: var(--slate-grey);
+    }
+  }
+
+  .special {
+    position: relative;
+    transition: transform 0.4s;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-image: linear-gradient(
+        351deg,
+        transparent 20%,
+        var(--yellow-brand) 52%,
+        transparent 85%
+      );
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s;
+    }
+    &:hover {
+      transform: scale(1.1);
+      &::before {
+        transform: scaleX(1);
+      }
+    }
   }
 }

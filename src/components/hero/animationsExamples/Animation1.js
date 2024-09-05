@@ -6,7 +6,7 @@ import ArrowLongSVG from '../../../assets/ArrowLongSVG';
 
 const Animation1 = () => {
   return (
-    <Card bgc="bgc-black-brand" border="border-grey">
+    <Card bgc="bgc-black-brand" border="border-grey" margin="0px 1rem 0px 1rem">
       <a href="/" className={`rounded uppercase link-button ${classes.first}`}>
         <p>Get started</p>
         <div className={classes['animation-wrapper']}>

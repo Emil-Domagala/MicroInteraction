@@ -1,14 +1,28 @@
 import ButtonArrow from '../UI/ButtonArrow';
 import SecondaryNav from '../navigation/SecondaryNav';
 import AnimationsWrapper from './animationsExamples/AnimationsWrapper';
-import classes from './Hero.module.scss';
 import user1 from '../../assets/jpeg/user1.jpg';
 import user2 from '../../assets/jpeg/user2.jpeg';
 import user3 from '../../assets/jpeg/user3.jpeg';
 import user4 from '../../assets/jpeg/user4.jpeg';
 import user5 from '../../assets/jpeg/user5.jpeg';
 
+import classes from './Hero.module.scss'; // Import your styles as needed
+import Bottom from './bottom/Bottom';
+import { useEffect, useState } from 'react';
+
 const Hero = () => {
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <header>
       <div className={`container ${classes['hero']}`}>
@@ -16,22 +30,22 @@ const Hero = () => {
           ✦ 5000+ Interactions copied ✦
         </div>
         <div className={classes['secondary-nav-wrapper']}>
-          <SecondaryNav />
+          {windowWidth < 768 && <SecondaryNav />}
         </div>
-        <div className="wrapper">
-          <h1 className={classes['header_title']}>
-            Micro Interactions<span className="yellow">↝</span> for your Webflow
-            projects
-          </h1>
-          <div className={classes['small-text']}>
-            <p>
-              A growing library of Webflow micro interactions to streamline
-              common project interactions &amp;{' '}
-              <span className="yellow">saving you time.</span>
-            </p>
-          </div>
-          <div className={classes['button-wrapper']}>
-            <ButtonArrow shadow='shadow'/>
+        {/* <div className="wrapper"> */}
+        <h1 className={classes['header_title']}>
+          Micro Interactions<span className="yellow">↝</span> for your Webflow
+          projects
+        </h1>
+        <div className={classes['small-text']}>
+          <p>
+            A growing library of Webflow micro interactions to streamline common
+            project interactions &amp;{' '}
+            <span className="yellow">saving you time.</span>
+          </p>
+        </div>
+        <div className={classes['button-wrapper']}>
+          <ButtonArrow shadow="shadow" />
           <div className={classes['users-wrapper']}>
             <div className={classes['users-img']}>
               <img
@@ -47,11 +61,12 @@ const Hero = () => {
             <div className={classes['text-users']}>
               <p>Trusted by over 100 Webflow Experts in the community.</p>
             </div>
-          </div>
+            {/* </div> */}
           </div>
         </div>
       </div>
-      <AnimationsWrapper/>
+      <AnimationsWrapper />
+      <Bottom />
     </header>
   );
 };

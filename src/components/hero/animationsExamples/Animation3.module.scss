@@ -28,9 +28,6 @@
   }
 }
 
-.first {
-  color: var(--black);
-}
 
 .second {
   position: relative;
@@ -123,7 +120,7 @@
 
 .fourth:hover {
   .arrow-circle {
-    transform: rotate(-45deg);
+    // transform: rotate(-45deg);
     color: var(--black-brand);
   }
   .arrow-cricle-inner {

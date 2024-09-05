@@ -1,8 +1,6 @@
 @use '../../../__colors.css';
 
 .first {
-  display: flex;
-  flex-direction: row;
   padding: 1.6rem 1.6rem;
   border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -85,23 +83,41 @@
   }
 }
 
-.third{
-    padding: 1rem;
-    background-color: var(--yellow-brand);
-    color: var(--black-brand);
+.third {
+  padding: 0.5rem 1rem 0.5rem 1.5rem;
+  background-color: var(--yellow-brand);
+  color: var(--black-brand) !important;
+  transition: transform 0.3s;
 
-    .arrows-wrapper{
-        // width: 2rem;
-        transform: rotate(-45deg);
-    }
-    .top,.bottom{
-        // position: absolute;
-        width: 2rem;
-    }
-    .top{
-        position: relative;
-    }
-    .bottom{
-        position: absolute;
-    }
+  .arrow-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-45deg);
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    overflow: hidden;
+  }
+  .arrow-first,
+  .arrow-second {
+    position: absolute;
+    height: 100%;
+    transition: transform 0.3s;
+  }
+  .arrow-first {
+    color: var(--black-brand);
+    transform: translateX(-250%);
+  }
+}
+
+.third:hover {
+  transform: scale(1.1);
+  .arrow-first {
+    transform: translateX(0%);
+  }
+  .arrow-second {
+    transform: translateX(250%);
+  }
 }

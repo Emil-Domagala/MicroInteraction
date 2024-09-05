@@ -5,7 +5,7 @@ import StarSVG from '../../../assets/StarSVG';
 
 const Animation3 = () => {
   return (
-    <Card bgc="bgc-black-brand" border="border-grey">
+    <Card bgc="bgc-black-brand" border="border-grey" margin="0px 1rem 0px 1rem">
       <a href="/" className={`link-button ${classes['first']}`}>
         <p className={classes['text']}>Get in touch</p>
         <div className={classes['arrow-circle']}>
@@ -40,8 +40,8 @@ const Animation3 = () => {
         <p className={classes['text']}>Get in touch</p>
         <div className={classes['arrow-circle']}>
           <div className={classes['arrow-cricle-inner']} />
-          <ArrowSVG className={classes["arrow-first"]} />
-          <ArrowSVG className={classes["arrow-second"]} />
+          <ArrowSVG className={classes['arrow-first']} />
+          <ArrowSVG className={classes['arrow-second']} />
         </div>
       </a>
     </Card>

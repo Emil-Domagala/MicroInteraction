@@ -1,11 +1,10 @@
 @use '../../../__colors.css';
 
-.animations-wrapper {
-  width: 100vw;
-  overflow-x: scroll;
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
+.animations-gradient {
+  box-sizing: border-box;
+  max-width: 100vw;
+  padding: 0px;
+  overflow: hidden;
   mask-image: linear-gradient(
     90deg,
     transparent 0%,
@@ -13,5 +12,19 @@
     #000 85%,
     transparent 100%
   );
-  padding: 4rem 0;
+  margin: 0px;
+}
+
+.card-wrapper {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.idk {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  overflow: scroll;
 }
