@@ -1,0 +1,49 @@
+@use '../../../../__colors.css';
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  width: 100%;
+  min-height: 500px;
+  border-radius: 25px;
+  background-color: var(--yellow-brand);
+  overflow: hidden;
+
+  .text-container {
+    max-width: 35rem;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .buttons-container {
+    margin-right: -50px;
+  }
+  .normal {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    white-space: nowrap;
+    border-radius: 100rem;
+    border: 1px solid var(--black-brand);
+    background-color: transparent;
+    color: var(--black-brand);
+    font-size: 1.6rem;
+    min-height: 2.5rem;
+    padding: 0.5rem 1rem;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

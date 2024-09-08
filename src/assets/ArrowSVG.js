@@ -5,6 +5,7 @@ const ArrowSVG = (props) => {
       viewBox="0 0 448 512"
       preserveAspectRatio="xMidYMid meet"
       className={props.className}
+      style={props.style}
     >
       {/* Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com
       License - https://fontawesome.com/license (Commercial License) Copyright

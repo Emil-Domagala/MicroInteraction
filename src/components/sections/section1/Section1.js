@@ -8,8 +8,8 @@ import Pricing from './cards/Pricing';
 
 const Section1 = () => {
   return (
-    <section>
-      <div className={`${classes['section1']}  container`}>
+    <section className={classes.one}>
+      <div className={`container`}>
         <h2 className="section-title">
           Stop wasting time - effortlessly add Micro Interactions
         </h2>

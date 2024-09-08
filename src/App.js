@@ -2,6 +2,7 @@ import Hero from './components/hero/Hero';
 import Navigation from './components/navigation/Navigation';
 import Section1 from './components/sections/section1/Section1';
 import { useEffect } from 'react';
+import Section2 from './components/sections/section2/Section2';
 
 function App() {
   // const [windowWidth, setWindowWidth] = useState(0);
@@ -20,7 +21,8 @@ function App() {
     <>
       <Navigation />
       <Hero />
-      <Section1/>
+      <Section1 />
+      <Section2 />
     </>
   );
 }
