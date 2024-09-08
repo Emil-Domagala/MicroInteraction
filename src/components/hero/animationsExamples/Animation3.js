@@ -5,7 +5,11 @@ import StarSVG from '../../../assets/StarSVG';
 
 const Animation3 = () => {
   return (
-    <Card bgc="bgc-black-brand" border="border-grey" margin="0px 1rem 0px 1rem">
+    <Card
+      bgc="bgc-black-brand"
+      border="border-grey"
+      min-width="min-width-32"
+    >
       <a href="/" className={`link-button ${classes['first']}`}>
         <p className={classes['text']}>Get in touch</p>
         <div className={classes['arrow-circle']}>

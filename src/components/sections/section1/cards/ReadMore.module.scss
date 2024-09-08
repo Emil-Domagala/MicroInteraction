@@ -1,1 +1,43 @@
 @use '../../../../__colors.css';
+
+.read-more {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+    overflow: hidden;
+  color: var(--black-brand);
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 1.6rem;
+  .left-arrow,
+  .right-arrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1.4rem;
+    transition: transform 0.3s;
+  }
+  .left-arrow {
+    color: var(--yellow-brand);
+    transform: translateX(-2.2rem);
+  }
+  .text {
+    padding-right: 1rem;
+    transition: transform 0.3s;
+  }
+}
+
+.read-more:hover {
+  .left-arrow {
+    transition: transform 0.4s 0.05s;
+    transform: translateX(0rem);
+  }
+  .text {
+    transform: translateX(1rem);
+  }
+  .right-arrow {
+    transform: translateX(2.2rem);
+  }
+}

@@ -14,7 +14,7 @@ const Animation7 = () => {
       if (buttonActive) {
         const bounding = buttonActive.getBoundingClientRect();
 
-        const newX = (e.clientX - bounding.left - bounding.width / 2)/2;
+        const newX = (e.clientX - bounding.left - bounding.width / 2) / 2;
         const newY = e.clientY - bounding.top - bounding.height / 2;
         buttonActive.style.transform = `translate3d(${newX}px, ${newY}px, 0)`;
       }
@@ -44,7 +44,11 @@ const Animation7 = () => {
   }, []);
 
   return (
-    <Card bgc="bgc-black-brand" border="border-grey" margin="0px 1rem 0px 1rem">
+    <Card
+      bgc="bgc-black-brand"
+      border="border-grey"
+      min-width="min-width-32"
+    >
       <a
         ref={buttonRef}
         style={{

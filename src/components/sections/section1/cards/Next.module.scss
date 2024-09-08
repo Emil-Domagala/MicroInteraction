@@ -1,1 +1,35 @@
 @use '../../../../__colors.css';
+
+.next {
+  display: flex;
+  font-display: row;
+  align-items: center;
+  border: 1px solid;
+  border-color: rgba(240, 240, 240, 0.2);
+  margin: 0 auto;
+  padding: 0.8rem 2rem 0.8rem 2.5rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: var(--white-brand);
+  transition: background-color 0.4s, border-color 0.4s, color 0.4s;
+  overflow: hidden;
+  .text {
+    transform: translateY(4rem);
+    transition: transform 0.4s;
+    margin-right: 15px;
+  }
+  .arrow {
+    display: flex;
+    align-items: center;
+    width: 25px;
+  }
+}
+
+.next:hover {
+  background-color: var(--yellow-brand);
+  border-color: var(--black-brand);
+  color: var(--black-brand);
+  .text {
+    transform: translateY(0);
+  }
+}

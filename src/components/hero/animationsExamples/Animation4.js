@@ -8,7 +8,7 @@ const Animation4 = () => {
       bgc="bgc-black-brand"
       border="border-grey"
       colection
-      margin="0px 1rem 0px 1rem"
+      min-width="min-width-32"
     >
       <a href="/" className={`rounded uppercase link-button ${classes.first}`}>
         <p>Get started</p>

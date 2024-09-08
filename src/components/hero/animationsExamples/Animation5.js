@@ -6,7 +6,11 @@ import ChevronSVG from '../../../assets/ChevronSVG';
 
 const Animation5 = () => {
   return (
-    <Card bgc="bgc-black-brand" border="border-grey" margin="0px 1rem 0px 1rem">
+    <Card
+      bgc="bgc-black-brand"
+      border="border-grey"
+      min-width="min-width-32"
+    >
       <a href="/" className={`link-button ${classes.first}`}>
         <div className={classes['apple-logo']}>
           <AppleLogoSVG />

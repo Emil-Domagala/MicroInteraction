@@ -1,1 +1,38 @@
 @use '../../../../__colors.css';
+
+.pricing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  //   background-color: pink;
+  margin: 0 auto;
+  text-decoration: none;
+  //   padding-right: 2rem;
+  overflow: hidden;
+  .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    color: var(--white-brand);
+    transform: translateX(-2.2rem);
+    transition: transform 0.4s;
+  }
+  .text {
+    font-size: 1.6rem;
+    margin: 0 0 0 0.5rem;
+    color: var(--white-brand);
+    transform: translateX(-2.2rem);
+    transition: transform 0.4s;
+  }
+}
+
+.pricing:hover {
+  .arrow {
+    transition: transform 0.15s 0.2s;
+    transform: translateX(0rem);
+  }
+  .text {
+    transform: translateX(0rem);
+  }
+}

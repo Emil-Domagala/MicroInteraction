@@ -1,6 +1,77 @@
 @use '../../../../__colors.css';
 
-.content-wrapper {
-  width: 100%;
+.card {
+  padding: 2rem !important;
+  min-width: 0px !important;
+}
 
+.see-more {
+  display: block;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 20px 30px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  overflow: hidden;
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+  }
+  p {
+    font-size: 1.6rem;
+    color: var(--black-brand);
+    margin: 0 0 0 40px;
+    transition: transform 0.4s;
+  }
+  .arrow-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bgc {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+  .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    transform: rotate(90deg);
+  }
+
+  .left {
+    .arrow {
+      color: var(--white);
+    }
+    .bgc {
+      background-color: var(--black-brand);
+    }
+  }
+  .right {
+    // position: absolute;
+    transform: translateX(60px);
+    .arrow {
+      color: var(--black-brand);
+    }
+    .bgc {
+      background-color: var(--white);
+    }
+  }
+}
+
+.see-more:hover {
+  background-color: var(--black-brand);
+  .content {
+    transform: translateX(-60px);
+  }
+  p {
+    color: var(--white);
+  }
 }

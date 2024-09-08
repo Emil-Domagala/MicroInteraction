@@ -13,7 +13,7 @@ const Section1 = () => {
         <h2 className="section-title">
           Stop wasting time - effortlessly add Micro Interactions
         </h2>
-        <p>
+        <p className={classes['under-title-text']}>
           With our ready-to-use Webflow micro interactions, you can easily{' '}
           <span>copy </span>
           and <span>paste</span> them into your projects, saving you time and
@@ -34,7 +34,7 @@ const Section1 = () => {
             </div>
           </a>
         </div>
-        <div className="cards-wrapper">
+        <div className={classes["cards-wrapper"]}>
           <SeeMore />
           <ReadMore />
           <Next />

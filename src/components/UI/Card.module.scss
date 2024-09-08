@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 32rem;
+  
   padding: 30px;
   border-radius: 20px;
   overflow: visible;
@@ -30,6 +30,11 @@
     color: var(--slate-grey);
   }
 }
+
+.min-width-32{
+  min-width: 32rem;
+}
+
 
 .border-grey {
   border: 1px solid rgba(109, 112, 130, 0.21);
