@@ -2,19 +2,18 @@
 
 .button {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  text-align: center;
   background-color: var(--yellow-brand);
   color: #000;
   border-radius: 100vw;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   padding: 1.4rem 1.4rem 1.4rem 3rem;
   text-decoration: none;
-
+  font-weight: 400;
   overflow: hidden;
   font-size: 1.6rem;
+  cursor: pointer;
 }
 
 .arrow-circle {
@@ -58,5 +57,62 @@
   transition: box-shadow 0.4s;
   &:hover {
     box-shadow: 0px 20px 50px 0px var(--yellow-brand-opacity);
+  }
+}
+
+.transparent {
+  background-color: transparent;
+  color: #07070d;
+  border: 1px solid #07070d;
+  .arrow-cricle-inner {
+    background-color: var(--yellow-brand);
+  }
+  &:hover {
+    .arrow-circle {
+      color: #07070d;
+    }
+  }
+}
+
+.black {
+  background-color: #07070d;
+  color: #fff;
+  .arrow-cricle-inner {
+    background-color: #fff;
+  }
+  &:hover {
+    .arrow-circle {
+      color: #07070d;
+    }
+  }
+}
+
+.small {
+  padding: 1rem 0rem 1rem 2rem;
+  font-size: 1.2rem;
+  .arrow-circle {
+    margin-left: 1.2rem;
+    width: 1rem;
+  }
+  &:hover {
+    .arrow-cricle-inner {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+.medium {
+  padding: 1rem 0.5rem 1rem 2rem;
+  font-size: 1.4rem;
+  .arrow-circle {
+    margin-left: 1.4rem;
+    width: 1.6rem;
+  }
+  &:hover {
+    .arrow-cricle-inner {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   }
 }

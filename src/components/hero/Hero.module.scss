@@ -28,6 +28,7 @@ header {
       font-weight: 400;
       line-height: 1.2;
       margin-bottom: 30px;
+      max-width: 1024px;
     }
     .small-text {
       text-wrap: balance;
@@ -87,7 +88,7 @@ header {
 @media (min-width: 479px) {
 header{
   .hero{
-    padding: 0 30px 50px 30px;
+    padding: 0 30px 20px 30px;
     .header_title{
       font-size: 4.8rem;
     }

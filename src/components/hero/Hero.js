@@ -45,7 +45,7 @@ const Hero = () => {
           </p>
         </div>
         <div className={classes['button-wrapper']}>
-          <ButtonArrow shadow="shadow" />
+          <ButtonArrow shadow content={'Get Lifetime Access'}/>
           <div className={classes['users-wrapper']}>
             <div className={classes['users-img']}>
               <img

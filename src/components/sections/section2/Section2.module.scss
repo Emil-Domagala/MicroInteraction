@@ -1,8 +1,30 @@
 @use '../../../__colors.css';
 
-
-.two{
-     background-color: var(--bg-white);
+.two {
+  background-color: var(--bg-white);
   color: var(--black-brand);
   padding-top: 100px;
+
+  .top-cards,
+  .bottom-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .two {
+    .top-cards {
+      flex-direction: row;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .two {
+    .bottom-cards {
+      flex-direction: row;
+    }
+  }
 }

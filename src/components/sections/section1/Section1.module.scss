@@ -38,50 +38,9 @@
       transform: rotateY(-180deg);
     }
   }
-  .first {
+  .arrow-wrapper{
     display: none;
-    color: #07070d;
-    border: 1px solid #07070d;
-    padding: 1rem 2rem;
-    p {
-      color: #07070d;
-      font-size: 1.2rem;
-    }
-
-    .arrow-circle {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-left: 1.2rem;
-      width: 1rem;
-      z-index: 2;
-      transition: transform 0.4s, color 0.2s;
-      svg {
-        z-index: 3;
-      }
-    }
-
-    .arrow-cricle-inner {
-      position: absolute;
-      width: 0;
-      height: 0;
-      background-color: var(--yellow-brand);
-      z-index: 1;
-      border-radius: 100%;
-      transition: width 0.4s, height 0.4s;
-    }
-  }
-
-  .first:hover {
-    .arrow-circle {
-      transform: rotate(-45deg);
-      color: var(--black-brand);
-    }
-    .arrow-cricle-inner {
-      width: 2rem;
-      height: 2rem;
-    }
+    min-width: 17rem;
   }
 
   .cards-wrapper {
@@ -99,9 +58,9 @@
 
 @media (min-width: 576px) {
   .one {
-    .first {
-      display: flex;
-    }
+    .arrow-wrapper{
+    display: block;
+  }
   }
 }
 

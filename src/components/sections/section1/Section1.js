@@ -1,10 +1,11 @@
 import BendedArrowSVG from '../../../assets/BendedArrowSVG';
-import ArrowSVG from '../../../assets/ArrowSVG';
+// import ArrowSVG from '../../../assets/ArrowSVG';
 import classes from './Section1.module.scss';
 import SeeMore from './cards/SeeMore';
 import ReadMore from './cards/ReadMore';
 import Next from './cards/Next';
 import Pricing from './cards/Pricing';
+import ButtonArrow from '../../UI/ButtonArrow';
 
 const Section1 = () => {
   return (
@@ -26,15 +27,11 @@ const Section1 = () => {
               <BendedArrowSVG />
             </div>
           </div>
-          <a href="/" className={`link-button rounded ${classes['first']}`}>
-            <p className={classes['text']}>View all interactions</p>
-            <div className={classes['arrow-circle']}>
-              <div className={classes['arrow-cricle-inner']} />
-              <ArrowSVG />
-            </div>
-          </a>
+          <div className={classes['arrow-wrapper']}>
+            <ButtonArrow small transparent content={'View all interactions'} />
+          </div>
         </div>
-        <div className={classes["cards-wrapper"]}>
+        <div className={classes['cards-wrapper']}>
           <SeeMore />
           <ReadMore />
           <Next />
