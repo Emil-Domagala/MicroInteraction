@@ -1,0 +1,42 @@
+@use '../../../__colors.css';
+
+.opinion {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  border: 1px solid #ffffff14;
+  border-radius: 8px;
+  background-color: var(--black-2);
+  .top {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+  img {
+    object-fit: cover;
+    border-radius: 100vw;
+    width: 3rem;
+    overflow: hidden;
+  }
+  .name {
+    font-size: 1.6rem;
+    color: var(--white-brand);
+  }
+  .position {
+    font-size: 1.2rem;
+    color: var(--slate-grey);
+  }
+  p {
+    white-space: pre-line
+  // white-space: pre;
+  // white-space: ;
+  // word-wrap: break-word;
+}
+  
+  .bottom{
+    font-size: 1.6rem;
+    color: var(--slate-grey);
+  }
+}

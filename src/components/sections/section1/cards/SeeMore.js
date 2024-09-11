@@ -7,7 +7,7 @@ const SeeMore = () => {
   return (
     <Card border={'bgc-white'} className={classes.card}>
       <div className="content-wrapper-section1">
-        <a href="/" className={`${classes['see-more']} link-buttonx rounded`}>
+        <div  className={`${classes['see-more']} link-buttonx rounded`}>
           <div className={classes['content']}>
             <div className={`${classes['arrow-wrapper']} ${classes['left']}`}>
               <div className={classes['bgc']} />
@@ -23,7 +23,7 @@ const SeeMore = () => {
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
       <BottomButtons />
     </Card>

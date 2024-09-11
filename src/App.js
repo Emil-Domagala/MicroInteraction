@@ -3,6 +3,7 @@ import Navigation from './components/navigation/Navigation';
 import Section1 from './components/sections/section1/Section1';
 import { useEffect } from 'react';
 import Section2 from './components/sections/section2/Section2';
+import Section3 from './components/sections/section3/Section3';
 
 function App() {
   // const [windowWidth, setWindowWidth] = useState(0);
@@ -23,6 +24,7 @@ function App() {
       <Hero />
       <Section1 />
       <Section2 />
+      <Section3/>
     </>
   );
 }

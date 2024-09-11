@@ -7,12 +7,12 @@ const Pricing = () => {
   return (
     <Card bgc={'bgc-black-brand'} className={classes.card}>
       <div className="content-wrapper-section1">
-        <a href="/" className={`${classes['pricing']}`}>
+        <div className={`${classes['pricing']}`}>
           <div className={classes['arrow']}>
             <ArrowSVG />
           </div>
           <div className={classes['text']}>Pricing</div>
-        </a>
+        </div>
       </div>
       <BottomButtons bgc='black' />
     </Card>

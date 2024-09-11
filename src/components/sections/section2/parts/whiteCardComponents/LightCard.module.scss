@@ -1,0 +1,52 @@
+@use '../../../../../__colors.css';
+.wrapper-light {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 950px;
+  background-color: var(--light-bg);
+  border-radius: 30px;
+  padding: 3rem;
+  height: 40rem;
+  gap: 2rem;
+  margin-top: 80px;
+  margin-right: -40px;
+  inset: 50% 0% auto auto;
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 480px) {
+  .wrapper-light {
+    margin-top: -40px;
+    margin-right: -40px;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper-light {
+    margin-top: 20px;
+    margin-right: -80px;
+    justify-content: flex-start;
+    .row {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .wrapper-light {
+    margin-top: -60px;
+  }
+  .row {
+    justify-content: flex-end;
+  }
+}

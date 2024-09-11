@@ -7,7 +7,7 @@ const ReadMore = () => {
   return (
     <Card border={'bgc-white'} className={classes.card}>
       <div className="content-wrapper-section1">
-        <a href="/" className={`${classes['read-more']}`}>
+        <div className={`${classes['read-more']}`}>
           <div className={classes['left-arrow']}>
             <ArrowSVG />
           </div>
@@ -16,7 +16,7 @@ const ReadMore = () => {
           <div className={classes['right-arrow']}>
             <ArrowSVG />
           </div>
-        </a>
+        </div>
       </div>
       <BottomButtons />
     </Card>

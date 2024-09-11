@@ -1,0 +1,105 @@
+@use '../../../../../__colors.css';
+
+.get-started {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  text-decoration: none;
+  border: 1px solid #07070d33;
+  transition: opacity 0.4s;
+  border-radius: 100rem;
+  white-space: nowrap;
+
+  .animation-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    margin-left: 1.5rem;
+    overflow: hidden;
+  }
+
+  .arrow {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 1rem;
+    min-height: 1rem;
+    max-width: 1rem;
+    max-height: 1rem;
+    transition: transform 0.4s;
+    transform: translateX(-150%);
+  }
+
+  .dot {
+    position: absolute;
+    border-radius: 50%;
+    min-width: 1.6rem;
+    min-height: 1.6rem;
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+    transition: transform 0.4s;
+    transform: translateX(0%);
+  }
+}
+
+.small {
+  p {
+    font-size: 1.2rem;
+  }
+  padding: 1rem 1rem 1rem 1.5rem;
+}
+.medium {
+  p {
+    font-size: 1.6rem;
+  }
+  padding: 1.5rem 2rem 1.5rem 2.5rem;
+}
+.big {
+  p {
+    font-size: 2rem;
+  }
+  padding: 2rem 3rem 2rem 3.5rem;
+}
+
+.basic {
+  background-color: transparent;
+  color: var(--black-brand);
+  .dot {
+    background-color: var(--yellow-brand);
+  }
+}
+.black-dot {
+  background-color: transparent;
+  color: var(--black-brand);
+  .dot {
+    background-color: var(--black-brand);
+  }
+}
+.black {
+  background-color: var(--black-brand);
+  color: var(--white);
+  .dot {
+    background-color: var(--yellow-brand);
+  }
+}
+
+.get-started:hover {
+  p {
+    opacity: 0.5;
+  }
+  .arrow {
+    transform: translateX(0%);
+  }
+  .dot {
+    transform: translateX(110%);
+  }
+}

@@ -1,5 +1,8 @@
 import ButtonArrow from '../../../UI/ButtonArrow';
 import classes from './WhiteCard.module.scss';
+import DarkCard from './whiteCardComponents/DarkCard';
+// import DarkCard from './whiteCardComponents/DarkCard';
+import LightCard from './whiteCardComponents/LightCard';
 
 const WhiteCard = () => {
   return (
@@ -18,7 +21,8 @@ const WhiteCard = () => {
           <ButtonArrow content={'Get Lifetime Access'} black medium />
         </div>
       </div>
-      <div className={classes['buttons-container']}></div>
+      <LightCard />
+      <DarkCard/>
     </div>
   );
 };

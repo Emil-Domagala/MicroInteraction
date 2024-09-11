@@ -25,12 +25,14 @@ const AnimationsWrapper = () => {
 
     if (wrapper) {
       window.addEventListener('scroll', moveWrapper);
-      // window.addEventListener('touchmove', moveWrapper);
+      window.addEventListener('resize', moveWrapper);
+      window.addEventListener('touchmove', moveWrapper);
     }
     return () => {
       if (wrapper) {
         window.removeEventListener('scroll', moveWrapper);
-        // window.removeEventListener('touchmove', moveWrapper);
+        window.removeEventListener('resize', moveWrapper);
+        window.removeEventListener('touchmove', moveWrapper);
       }
     };
   }, []);
