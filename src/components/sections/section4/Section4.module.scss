@@ -1,0 +1,25 @@
+@use '../../../__colors.css';
+
+.four{
+    background-image: url('https://cdn.prod.website-files.com/64ab4ca244ef5156093937b6/65ef838837ff4e590610a6c8_BG.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    outline: none;
+    
+    .under-title-text{
+        font-size: 1.2rem;
+        color: var(--slate-grey);
+        text-align: center;
+        max-width: 35rem;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:768px) {
+    .four{
+        background-size: contain;
+        background-position: 0% 0%;
+        padding-top: 10rem;
+    }
+}
