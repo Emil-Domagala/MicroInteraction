@@ -1,9 +1,28 @@
+import { useEffect } from 'react';
 import GetStartedBtn from './GetStartedBtn';
 import classes from './LightCard.module.scss';
+import {motion, useAnimation}from 'framer-motion'
 
-const LightCard = () => {
+const LightCard = (props) => {
+   const mainControls = useAnimation();
+
+   useEffect(() => {
+     if (props.isInView) {
+       mainControls.start('visible');
+     }
+   }, [props.isInView]);
+
   return (
-    <div className={classes['wrapper-light']}>
+    <motion.div
+      className={classes['wrapper-light']}
+      variants={{
+        hidden: { y: 300 },
+        visible: { y: 0 },
+      }}
+      initial="hidden"
+      animate={mainControls}
+      transition={{ duration: 0.5 }}
+    >
       <div className={classes['row']}>
         <GetStartedBtn size={'small'} color={'basic'} />
         <GetStartedBtn size={'medium'} color={'basic'} />
@@ -19,7 +38,7 @@ const LightCard = () => {
         <GetStartedBtn size={'medium'} color={'black'} />
         <GetStartedBtn size={'big'} color={'black'} />
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default LightCard;

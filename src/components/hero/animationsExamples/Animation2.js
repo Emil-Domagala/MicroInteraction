@@ -10,7 +10,7 @@ const Animation2 = () => {
       colection
       min-width='min-width-32'
     >
-      <a href="/" className={` ${classes.first} link-button`}>
+      <a href="#" className={` ${classes.first} link-button`}>
         <div className={classes['circle']}>
           <div className={`${classes['arrow-wrapper']} ${classes['left']}`}>
             <ArrowSVG />
@@ -31,7 +31,7 @@ const Animation2 = () => {
           <div className={`rounded ${classes['main-button--bgc']}`}></div>
         </div>
       </a>
-      <a href="/" className={`button ${classes.second} link-button`}>
+      <a href="#" className={`button ${classes.second} link-button`}>
         <div className={`rounded ${classes['main-button']} link-button`}>
           <div className={`${classes['main-button--inside']} ${classes.top}`}>
             Get in touch
@@ -53,7 +53,7 @@ const Animation2 = () => {
         </div>
       </a>
 
-      <a href="/" className={` ${classes.third} link-button`}>
+      <a href="#" className={` ${classes.third} link-button`}>
         <div className={`rounded ${classes['main-button']} link-button`}>
           <div className={`${classes['main-button--inside']} ${classes.top}`}>
             Get in touch

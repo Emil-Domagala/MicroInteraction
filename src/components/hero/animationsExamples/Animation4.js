@@ -10,7 +10,7 @@ const Animation4 = () => {
       colection
       min-width="min-width-32"
     >
-      <a href="/" className={`rounded uppercase link-button ${classes.first}`}>
+      <a href="#" className={`rounded uppercase link-button ${classes.first}`}>
         <p>Get started</p>
         <div className={classes['animation-wrapper']}>
           <div className={classes.arrow}>
@@ -19,7 +19,7 @@ const Animation4 = () => {
           <div className={classes.dot}></div>
         </div>
       </a>
-      <a href="/" className={`rounded uppercase link-button ${classes.second}`}>
+      <a href="#" className={`rounded uppercase link-button ${classes.second}`}>
         <p>Get started</p>
         <div className={classes['animation-wrapper']}>
           <div className={classes.arrow}>
@@ -28,7 +28,7 @@ const Animation4 = () => {
           <div className={classes.dot}></div>
         </div>
       </a>
-      <a href="/" className={`rounded uppercase link-button ${classes.third}`}>
+      <a href="#" className={`rounded uppercase link-button ${classes.third}`}>
         <p>Get started</p>
         <div className={classes['animation-wrapper']}>
           <div className={classes.arrow}>

@@ -11,7 +11,7 @@ const Animation5 = () => {
       border="border-grey"
       min-width="min-width-32"
     >
-      <a href="/" className={`link-button ${classes.first}`}>
+      <a href="#" className={`link-button ${classes.first}`}>
         <div className={classes['apple-logo']}>
           <AppleLogoSVG />
         </div>
@@ -20,7 +20,7 @@ const Animation5 = () => {
           <ArrowSVG />
         </div>
       </a>
-      <a href="/" className={`link-button rounded ${classes.second}`}>
+      <a href="#" className={`link-button rounded ${classes.second}`}>
         <div className={classes['animation-wrapper']}>
           <div className={classes['chevron']}>
             <ChevronSVG />
@@ -28,7 +28,7 @@ const Animation5 = () => {
         </div>
         Newsletter
       </a>
-      <a href="/" className={`link-button rounded ${classes.third}`}>
+      <a href="#" className={`link-button rounded ${classes.third}`}>
         Subscribe
         <div className={classes['arrow-circle']}>
           {/* <div className={classes['arrow-cricle-inner']} /> */}

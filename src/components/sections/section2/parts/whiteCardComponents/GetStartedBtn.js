@@ -5,7 +5,7 @@ const GetStartedBtn=(props)=>{
     const size = classes[props.size]
     const color = classes[props.color]
     return (
-      <div href="/" className={` uppercase ${classes['get-started']} ${size} ${color}`}>
+      <div href="#" className={` uppercase ${classes['get-started']} ${size} ${color}`}>
         <p>Get started</p>
         <div className={classes['animation-wrapper']}>
           <div className={classes.arrow}>

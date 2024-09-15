@@ -10,14 +10,14 @@ const Animation3 = () => {
       border="border-grey"
       min-width="min-width-32"
     >
-      <a href="/" className={`link-button ${classes['first']}`}>
+      <a href="#" className={`link-button ${classes['first']}`}>
         <p className={classes['text']}>Get in touch</p>
         <div className={classes['arrow-circle']}>
           <div className={classes['arrow-cricle-inner']} />
           <ArrowSVG />
         </div>
       </a>
-      <a href="/" className={`uppercase link-button ${classes.second}`}>
+      <a href="#" className={`uppercase link-button ${classes.second}`}>
         <div className={classes.inner}>
           <div className={classes['animation-wrapper']}>
             <div className={classes['left-star']}>
@@ -30,7 +30,7 @@ const Animation3 = () => {
           Explore
         </div>
       </a>
-      <a href="/" className={`link-button ${classes.third}`}>
+      <a href="#" className={`link-button ${classes.third}`}>
         <div className={classes['left-arrow']}>
           <ArrowSVG />
         </div>
@@ -40,7 +40,7 @@ const Animation3 = () => {
           <ArrowSVG />
         </div>
       </a>
-      <a href="/" className={`link-button ${classes['fourth']}`}>
+      <a href="#" className={`link-button ${classes['fourth']}`}>
         <p className={classes['text']}>Get in touch</p>
         <div className={classes['arrow-circle']}>
           <div className={classes['arrow-cricle-inner']} />

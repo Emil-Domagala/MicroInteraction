@@ -139,7 +139,7 @@ const Section3 = () => {
       // console.log(scrolledVal);
 
       if (scrolledVal > 0 && window.innerWidth > 768) {
-        const newPosition = 100 - (scrolledVal / 18);
+        const newPosition = 100 - (scrolledVal / 13);
         setOpinionsPosition(newPosition);
       }
     };
@@ -182,7 +182,7 @@ const Section3 = () => {
           </div>
           <div
             className={classes['row']}
-            style={{ transform: `translateY(-${opinionsPosition}px)` }}
+            style={{ transform: `translateY(${-opinionsPosition}px)` }}
           >
             {opinionsRow3.map((opinion) => {
               return <Opinion opinion={opinion} key={opinion.name} />;

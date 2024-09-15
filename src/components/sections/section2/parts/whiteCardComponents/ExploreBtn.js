@@ -7,7 +7,7 @@ const ExploreBtn = (props) => {
 
   return (
     <a
-      href="/"
+      href="#"
       className={`uppercase ${classes['explore-btn']} ${size} ${color}`}
     >
       <div className={`${classes.background} rounded`}></div>

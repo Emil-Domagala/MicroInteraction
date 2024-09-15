@@ -4,7 +4,7 @@ import classes from './ButtonArrow.module.scss';
 const ButtonArrow = (props) => {
   return (
     <a
-      href="/"
+      href="#"
       className={`${classes['button']} 
       ${props.shadow && classes.shadow} 
       ${props.small && classes.small} 

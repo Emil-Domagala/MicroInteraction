@@ -12,15 +12,15 @@ const Footer = () => {
           Interactions.
         </p>
         <div className={classes['links']}>
-          <a href="/">License Agreement</a>
-          <a href="/">Privacy Policy</a>
+          <a href="#">License Agreement</a>
+          <a href="#">Privacy Policy</a>
         </div>
       </div>
       <div className={classes['line']} />
 
       <div className={classes['footer-item']}>
         <p>Made by Emil Domagała & a project by </p>
-        <div className={classes['wrapper']}>
+        <div className={classes['photo-wrapper']}>
           <div className={classes['photo']} />
           <p>Hafiz Manzoor</p>
         </div>

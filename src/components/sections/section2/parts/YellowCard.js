@@ -1,3 +1,4 @@
+import { useRef, useEffect } from 'react';
 import ArrowInCircle from '../../../../assets/ArrowInCircleSVG';
 import ArrowSVG from '../../../../assets/ArrowSVG';
 import CartSVG from '../../../../assets/CartSVG';
@@ -15,8 +16,23 @@ import RocketSVG from '../../../../assets/RocketSVG';
 import SmiledFaceSVG from '../../../../assets/SmiledFaceSVG';
 import SwitchSVG from '../../../../assets/SwitchSVG';
 import classes from './YellowCard.module.scss';
+import { motion, useInView, useAnimation } from 'framer-motion';
 
 const YellowCard = () => {
+  const topRef = useRef(null);
+  // const middleRef = useRef(null)
+  // const bottomRef = useRef(null)
+  const topAnimation = useAnimation();
+  const isInView = useInView(topRef, { once: true });
+  // const middleAnimation = useAnimation()
+  // const bottomAnimation = useAnimation()
+
+  useEffect(() => {
+    if (isInView) {
+      topAnimation.start('visible');
+    }
+  }, [isInView]);
+
   return (
     <div className={`${classes['yellow']} section2-box`}>
       <div className={classes['text-container']}>
@@ -28,8 +44,17 @@ const YellowCard = () => {
           including animations, buttons, link effects, and more.
         </p>
       </div>
-      <div className={classes['buttons-container']}>
-        <div className={classes['row']}>
+      <div className={classes['buttons-container']} ref={topRef}>
+        <motion.div
+          className={classes['row']}
+          variants={{
+            hidden: { x: '100%' },
+            visible: { x: 0 },
+          }}
+          initial="hidden"
+          animate={topAnimation}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           <div className={classes['normal']}>
             <CheckedSVG />
           </div>
@@ -46,8 +71,17 @@ const YellowCard = () => {
           <div className={classes['normal']}>
             <ArrowInCircle />
           </div>
-        </div>
-        <div className={classes['row']}>
+        </motion.div>
+        <motion.div
+          className={classes['row']}
+          variants={{
+            hidden: { x: '150%' },
+            visible: { x: 0 },
+          }}
+          initial="hidden"
+          animate={topAnimation}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           <div className={classes['normal']}>
             <SwitchSVG /> Get in touch
           </div>
@@ -68,8 +102,17 @@ const YellowCard = () => {
           <div className={classes['normal']}>
             <CheckedIrregularCircleSVG />
           </div>
-        </div>
-        <div className={classes['row']}>
+        </motion.div>
+        <motion.div
+          className={classes['row']}
+          variants={{
+            hidden: { x: '120%' },
+            visible: { x: 0 },
+          }}
+          initial="hidden"
+          animate={topAnimation}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           <div className={classes['normal']}>
             <RocketSVG />
           </div>
@@ -86,7 +129,7 @@ const YellowCard = () => {
           <div className={classes['normal']}>
             <PencilSVG />
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -21,16 +21,16 @@ const SecondaryNav = () => {
 
   return (
     <div className={classes['secondary-nav']}>
-      <a href="/" className={`${classes['nav--item']} ${classes.special}`}>
+      <a href="#" className={`${classes['nav--item']} ${classes.special}`}>
         {content}
       </a>
-      <a href="/" className={`${classes['nav--item']} ${classes.normal}`}>
+      <a href="#" className={`${classes['nav--item']} ${classes.normal}`}>
         Pricing
       </a>
-      <a href="/" className={`${classes['nav--item']} ${classes.normal}`}>
+      <a href="#" className={`${classes['nav--item']} ${classes.normal}`}>
         Reviews
       </a>
-      <a href="/" className={`${classes['nav--item']} ${classes.normal}`}>
+      <a href="#" className={`${classes['nav--item']} ${classes.normal}`}>
         FAQs
       </a>
     </div>

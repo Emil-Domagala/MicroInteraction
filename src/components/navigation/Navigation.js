@@ -23,7 +23,7 @@ const Navigation = () => {
         <div className={classes['nav-wrapper']}>
           <div className={classes['one-third']}>
             <div className={classes['nav-logo']}>
-              <a href="/">
+              <a href="#">
                 <MicroInteractionsLogoSVG />
               </a>
             </div>
@@ -37,10 +37,10 @@ const Navigation = () => {
             <div className={`${classes['nav-menu__all']}`}>
               <div className={classes['blur']}>
                 {' '}
-                <a className={`${classes.signin}  button rounded`} href="/">
+                <a className={`${classes.signin}  button rounded`} href="#">
                   Sign In
                 </a>
-                <a className={`${classes.signup}  button rounded`} href="/">
+                <a className={`${classes.signup}  button rounded`} href="#">
                   Get Lifetime Access
                 </a>
               </div>

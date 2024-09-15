@@ -55,7 +55,7 @@ const Animation7 = () => {
           transition: 'transform 0.1s ease-out', // Smooth transition effect
         }}
         // id="follow"
-        href="/"
+        href="#"
         className={`${classes['first']} link-button rounded`}
       >
         <p>Preview in browser</p>
@@ -63,14 +63,14 @@ const Animation7 = () => {
           <ArrowSVG className={classes['arrow-first']} />
         </div>
       </a>
-      <a href="/" className={`${classes['second']} link-button rounded`}>
+      <a href="#" className={`${classes['second']} link-button rounded`}>
         Preview in browser
         <div className={classes['arrow-circle']}>
           <ArrowSVG className={classes['arrow-first']} />
           <ArrowSVG className={classes['arrow-second']} />
         </div>
       </a>
-      <a href="/" className={`${classes['third']} link-button rounded`}>
+      <a href="#" className={`${classes['third']} link-button rounded`}>
         <p>Preview in browser</p>
       </a>
     </Card>

@@ -11,7 +11,7 @@ const Animation1 = () => {
       border="border-grey"
       min-width="min-width-32"
     >
-      <a href="/" className={`rounded uppercase link-button ${classes.first}`}>
+      <a href="#" className={`rounded uppercase link-button ${classes.first}`}>
         <p>Get started</p>
         <div className={classes['animation-wrapper']}>
           <div className={classes.arrow}>
@@ -20,7 +20,7 @@ const Animation1 = () => {
           <div className={classes.dot}></div>
         </div>
       </a>
-      <a href="/" className={`rounded uppercase link-button ${classes.second}`}>
+      <a href="#" className={`rounded uppercase link-button ${classes.second}`}>
         <div className={`${classes.background} rounded`}></div>
         <div className={classes.inner}>
           <div className={classes['animation-wrapper']}>
@@ -34,7 +34,7 @@ const Animation1 = () => {
           Explore
         </div>
       </a>
-      <a href="/" className={`rounded link-button ${classes.third}`}>
+      <a href="#" className={`rounded link-button ${classes.third}`}>
         <div className={classes.arrow}>
           <ArrowLongSVG />
         </div>

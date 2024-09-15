@@ -22,7 +22,7 @@ const Section5 = () => {
       content: (
         <p>
           If you would like to get a refund please reach out to me on{' '}
-          <a href="/">X</a> I will be happy to help.'
+          <a href="#">X</a> I will be happy to help.'
         </p>
       ),
     },
@@ -42,7 +42,7 @@ const Section5 = () => {
       title: 'Is Micro Interactions free?',
       content: (
         <p>
-          There are lots of <a href="/">micro interactions</a> that you can use
+          There are lots of <a href="#">micro interactions</a> that you can use
           for free without needing to sign up. But if you want more advanced
           interactions, you`ll need to get a pro plan.'
         </p>
@@ -63,9 +63,9 @@ const Section5 = () => {
       title: 'What is the difference between Lifetime Aceess & Annual plan?',
       content: (
         <p>
-          With <a href="/">Lifetime Access</a>, you make a single payment and
+          With <a href="#">Lifetime Access</a>, you make a single payment and
           get lifetime access to all forthcoming updates. With the{' '}
-          <a href="/">Annual Plan</a>, you retain access to all premium Micro
+          <a href="#">Annual Plan</a>, you retain access to all premium Micro
           Interactions but must renew your subscription annually.'
         </p>
       ),
