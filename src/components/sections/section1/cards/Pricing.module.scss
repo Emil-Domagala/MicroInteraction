@@ -18,6 +18,9 @@
     color: var(--white-brand);
     transform: translateX(-2.2rem);
     transition: transform 0.4s;
+     svg{
+      width: 100%;
+    }
   }
   .text {
     font-size: 1.6rem;

@@ -25,6 +25,9 @@
       width: 18px;
       line-height: 0rem;
       transition: transform 0.4s;
+      svg{
+      width: 100%;
+    }
     }
     .left {
       transform: translateX(-200%);

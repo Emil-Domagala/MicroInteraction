@@ -13,6 +13,9 @@
     justify-content: center;
     width: 1.8rem;
     transition: transform 0.4s;
+    svg{
+      width: 100%;
+    }
   }
   .arrow {
     transform: translateX(4rem);
@@ -69,6 +72,9 @@
     max-width: 0.7rem;
     transform: translateX(-3rem);
     transition: 0.3s;
+    svg{
+      width: 100%;
+    }
   }
 }
 
@@ -105,6 +111,9 @@
     position: absolute;
     height: 100%;
     transition: transform 0.3s;
+    svg{
+      width: 100%;
+    }
   }
   .arrow-first {
     color: var(--black-brand);

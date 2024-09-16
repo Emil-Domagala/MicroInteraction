@@ -32,6 +32,9 @@
     max-height: 1rem;
     transition: transform 0.4s;
     transform: translateX(-150%);
+    svg{
+      width: 100%;
+    }
   }
 
   .dot {

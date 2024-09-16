@@ -3,11 +3,10 @@
 .first {
   padding: 1.5rem 1.5rem 1.5rem 1.75rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  
-  p{
-    transition: opacity 0.4s;
 
-}
+  p {
+    transition: opacity 0.4s;
+  }
 
   .animation-wrapper {
     position: relative;
@@ -34,6 +33,9 @@
     max-height: 1rem;
     transition: transform 0.4s;
     transform: translateX(-150%);
+    svg {
+      width: 100%;
+    }
   }
 
   .dot {
@@ -99,6 +101,9 @@
     max-width: 1.6rem;
     max-height: 1.6rem;
     transition: transform 0.4s;
+    svg {
+      width: 100%;
+    }
   }
   .left-star {
     transform: translateX(-120%);
@@ -125,6 +130,9 @@
     color: var(--black-brand);
     transform: translateX(-150%);
     transition: transform 0.2s;
+    svg {
+      width: 100%;
+    }
   }
   .third--text {
     display: block;

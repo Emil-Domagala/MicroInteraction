@@ -37,6 +37,9 @@
       align-items: center;
       color: var(--yellow-brand);
       width: 20px;
+      svg{
+      width: 100%;
+    }
     }
     p {
       font-size: 1.6rem;
@@ -111,6 +114,9 @@
       justify-content: center;
       width: 20px;
       color: var(--yellow-brand);
+      svg{
+      width: 100%;
+    }
     }
     .addition-text {
       max-width: 21rem;

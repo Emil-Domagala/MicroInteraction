@@ -8,7 +8,7 @@ import { useInView } from 'framer-motion';
 
 const WhiteCard = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-400px 0px -400px 0px' });
+  const isInView = useInView(ref, { once: true});
 
   return (
     <div className={`${classes['white']} section2-box`}>
@@ -26,6 +26,7 @@ const WhiteCard = () => {
           <ButtonArrow content={'Get Lifetime Access'} black medium />
         </div>
       </div>
+      <div className={classes["triger-animation"]}/>
       <LightCard isInView={isInView} />
       <DarkCard isInView={isInView} />
     </div>

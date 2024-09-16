@@ -1,14 +1,30 @@
 import classes from './Opinion.module.scss';
-import { motion } from 'framer-motion';
+import { motion, useInView, useAnimation } from 'framer-motion';
+import { useRef, useEffect } from 'react';
 
 const Opinion = (props) => {
+ const ref = useRef(null);
+ const mainControls = useAnimation();
+ const isInView = useInView(ref, { once: true });
+
+ useEffect(() => {
+   if (isInView) {
+     mainControls.start('visible');
+   }
+ }, [isInView]);
+
   return (
     <motion.div
       className={classes['opinion']}
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      initial='hidden'
+
+      animate={mainControls}
       transition={{ duration: 0.5 }}
-      viewport={{ once: true, margin: '-80% 0px -80% 0px' }}
+
     >
       <div className={classes['top']}>
         <div className={classes['avatar']}>
@@ -22,6 +38,7 @@ const Opinion = (props) => {
       <div className={classes['bottom']}>
         <p>{props.opinion.opinion}</p>
       </div>
+      <div className={classes['watcher']} ref={ref} />
     </motion.div>
   );
 };

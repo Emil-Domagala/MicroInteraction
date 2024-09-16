@@ -20,12 +20,8 @@ import { motion, useInView, useAnimation } from 'framer-motion';
 
 const YellowCard = () => {
   const topRef = useRef(null);
-  // const middleRef = useRef(null)
-  // const bottomRef = useRef(null)
   const topAnimation = useAnimation();
   const isInView = useInView(topRef, { once: true });
-  // const middleAnimation = useAnimation()
-  // const bottomAnimation = useAnimation()
 
   useEffect(() => {
     if (isInView) {

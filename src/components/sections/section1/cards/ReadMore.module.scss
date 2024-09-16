@@ -19,6 +19,9 @@
     justify-content: center;
     width: 1.4rem;
     transition: transform 0.3s;
+     svg{
+      width: 100%;
+    }
   }
   .left-arrow {
     color: var(--yellow-brand);

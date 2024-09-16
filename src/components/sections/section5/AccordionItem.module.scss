@@ -29,6 +29,7 @@
       display: flex;
       width: 15px;
       svg {
+        width: 100%;
         transition: transform 0.3s ease-in-out;
         transform: rotate(90deg);
       }

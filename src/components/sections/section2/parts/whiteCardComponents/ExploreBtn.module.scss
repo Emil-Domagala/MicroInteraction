@@ -53,6 +53,9 @@
     max-width: 1.6rem;
     max-height: 1.6rem;
     transition: transform 0.4s;
+    svg{
+      width: 100%;
+    }
   }
   .left-star {
     transform: translateX(-120%);
